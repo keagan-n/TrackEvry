@@ -12,6 +12,8 @@ Exploring web development and learning how to link backend with frontend using G
 
 --Firebase Admin: pip install firebase-admin
 
+- Run main.py
+
 - Run index.html in local host 127.0.0.1:5000
 
 
