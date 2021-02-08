@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <title>TrackEvy</title>
+
+        <!--Stylesheets-->
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="styles.css">
+
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+
+            <!-- <h1><img src="trackevy.jpg" alt="trackevy"/></h1> -->
+            <h2 class="title">TrackEvry Dashboard </h1>
+            
+            <!--USERS TO-DO LISTS/ALL CATEGORIES-->
+            <!-- displayed on left sidebar of web page-->
+            <div>
+                <div class="nav-bar">
+                    
+                    <h3 class="my-lists">My Lists</h3>
+                    
+                    <ul class="to-do-lists">
+                        {%for list in lists%}
+                        <li class = "list curr-list">{{list.id}}</li>
+                        {%endfor%}
+
+
+                        <!-- <li class = "list curr-list">School</li>
+                        <li class = "list">Work</li>
+                        <li class = "list">Workout</li> -->
+                    </ul>
+
+                    <form id="add-category" action="/add" method="POST">
+                        <input name="text" type="text" class="new-cat" placeholder="Create a new list">
+    
+                        <input class="btn" type="submit" value="+">
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        
+            <!--CURRENT TO-DO LIST -->
+            <!-- main component of home page : showcasing user's current to do list -->
+            <div class="wrapper">
+                <div class="to-do-list">
+                    
+                    <h2 class="curr-list-title">School</h2>
+                    
+                        {%for check in checks%}
+                        <!-- <li class = "list curr-list">{{check.id}}</li> -->
+                        <div class="task">
+                            <input type="checkbox" id="task-{{loop.index}}"></input>
+                            <label for="task-{{loop.index}}">{{check.id}}</label>
+                        </div>
+                        {%endfor%}
+
+   
+        
+                    <div class="add-task">
+                        <form id="task" action="/addEvent" method="POST">
+
+                            <input type="text" id="new-task-input" name="new-task-input" class="new-task" placeholder="New Task" />
+                            <input class="btn" type="submit" value="+"></input>
+            
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+    </body>

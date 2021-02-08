@@ -1,0 +1,128 @@
+
+
+body{
+ 
+   background: rgb(230, 229, 229);
+
+   /* background: rgb(173,185,241);
+   background: linear-gradient(99deg, rgba(173,185,241,0.9794292717086834) 0%, rgba(148,187,233,0.861782212885154) 69%); */
+   display: grid;
+   grid-gap: 20px;
+   grid-template-columns: repeat(2, 2fr);
+   grid-gap: 100px;
+   
+
+                        
+}
+
+/* HEDAER */
+.title{
+   Line-height: 2;
+   /* grid-area: header; */
+
+   grid-column: 1 / -1;
+   font-size: 90px;
+   font-weight: lighter;
+   letter-spacing: 2px;
+   color: rgb(255, 255, 255);
+   text-align: center;
+   font-family: 'News Cycle', sans-serif;
+   background: rgb(181,212,237);
+   /* background: linear-gradient(99deg, rgba(181,212,237,0.8225665266106442) 4%, rgba(198,184,238,0.4500175070028011) 88%); */
+   margin: 0px;
+}
+
+.nav-bar
+{
+   background-color:white;
+   border-radius: 30px;
+   padding: 2.1em;
+   margin-top: 3.1em;
+   margin-left: 3.1em;
+   /* margin-right: 400; */
+   line-height: 2;
+   grid-column: span 4;
+
+}
+.to-do-list
+{
+   background-color: white;
+   border-radius: 30px;
+   padding: 2.1em;
+   margin-top: 3.1em;
+   /* margin-left: 3.1em; */
+   margin-right: 4.1em;
+   line-height: 2;
+   grid-column: span 6;
+
+}
+
+.to-do-lists
+{
+   font-size: 30px;
+   list-style: circle;
+}
+
+
+.task
+{
+   font-size: 20px;
+}
+
+
+.new-task
+{
+   text-indent: 5px;
+   margin-right: 5px;
+   margin-left: 5px;
+   background:transparent;
+   border:0;
+   border-bottom: 1px solid gray;
+}
+
+.new-cat
+{
+   text-indent: 5px;
+   margin-left: 15px;
+   margin-right: 10px;
+   background:transparent;
+   border:0;
+   border-bottom: 1px solid gray;
+}
+
+.my-lists
+{
+   color:rgb(255, 255, 255);
+   letter-spacing: 2px;
+   background-color: rgba(105, 132, 182, 0.356);
+   padding: 20px;
+   border-radius: 15px;
+}
+
+.curr-list-title
+{
+   color:rgb(255, 255, 255);
+   letter-spacing: 2px;
+   background-color: rgba(88, 155, 185, 0.356);
+   padding: 20px;
+   border-radius: 15px;
+}
+
+.btn
+{
+   color: rgb(62, 91, 189);
+   background-color: rgba(239, 243, 245, 0.24);
+   border-radius: 30%;
+   font-weight: 800;
+   font-size: 1.5em;
+}
+
+
+
+
+
+
+
+
+
+
